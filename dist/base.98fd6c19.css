@@ -26,7 +26,7 @@
 body {
 	margin: 0;
 	--color-text: #111;
-	--color-bg: #dce3e6;
+	--color-bg: #f2e9e0;
 	--color-link: #c19971;
 	--color-link-hover: #111;
 	color: var(--color-text);
@@ -100,10 +100,10 @@ a:focus {
 }
 
 .frame__title {
-	font-size: 1rem;
+	font-size: 0.8rem;
 	margin: 0 0 1rem;
 	font-weight: normal;
-	font-family: goldenbook;
+	font-family: messapiabold !important;
 }
 
 .frame__menu {
@@ -153,9 +153,7 @@ a:focus {
 }
 
 .frame__nav-item--current span{
-	outline: none;
-	color: #ed591f;
-
+	color: cornflowerblue;
 }
 
 .content {
@@ -403,7 +401,7 @@ a:focus {
     /*-webkit-text-stroke: var(--width-outline) var(--color-text);*/
     /*text-stroke: var(--width-outline) var(--color-text);*/
     -webkit-text-fill-color: black;
-    text-fill-color: black;
+    text-fill-color: transparent;
     margin-top: -5rem;
     letter-spacing: -1px;
 }
@@ -423,8 +421,8 @@ a:focus {
 }
 
 .content__action {
-	border: 1px solid rgba(255,250,250, .85);
-	color: rgba(255,250,250, .95);
+	border: 1px solid white;
+	color: white;
 	width: 15rem;
 	height: 15rem;
 	text-align: center;
@@ -436,9 +434,9 @@ a:focus {
 	z-index: 100;
 	cursor: pointer;
 	background: none;
-	font-family: sans-serif;
+	font-family: messapiabold;
 	font-weight: 300;
-	font-size: 1.1rem;
+	font-size: 0.9rem;
 	text-transform: uppercase;
 	-moz-appearance: none;
 	-webkit-appearance: none;
@@ -451,9 +449,10 @@ a:focus {
 
 .content__action:hover {
 	color: #000;
+	border: 0px solid rgba(220, 227, 230, 1);
 	opacity: 1;
-	background-color: rgba(255,250,250, .85);
-	cursor: not-allowed;
+	background: rgba(220, 227, 230, 1) !important;
+	cursor: allowed;
 }
 
 .content__action:focus {
