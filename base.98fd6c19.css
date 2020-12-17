@@ -560,3 +560,11 @@ a:focus {
 		margin: 0;
 	}
 }
+
+@media screen and (max-width: 53em) {
+
+	.frame__nav {
+	    display: none !important;
+	}
+
+}
